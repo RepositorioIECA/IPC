@@ -1,0 +1,98 @@
+<?php
+include_once '../portal/class/general.php';
+include 'config.php';
+$tipo = PAG_PRODUCTO;
+include 'cabecera.php';
+?>
+
+
+  <!-- Cuerpo -->
+  <div id='cuerpo'>
+   <div> <!-- sinid_1 -->
+  <!-- bloque de contenido -->
+  <div id='container'>
+    <table class='tbmenu' summary='Columna 1: Descripción del producto, Columna 2: menú'>
+    <tr><td class='tdmenu'>
+     <div id='columizq'>
+      <div id='menu-producto'>
+
+      <p>The <strong>Consumer Price Index</strong> measures the evolution of prices of consumer goods and services acquired by households.</p>
+
+	<ul>          
+      <li>Organization: Institute of Statistics and Cartography of Andalusia.</li>
+	  <li>Scope: National, Andalusia and provincial.</li>
+    </ul>
+
+      </div>
+	  <div id='actualizacion'>
+	  <p>Updates:</p>
+	  	<ul class='circle'>
+		<li>Last data published: 15/02/2022</li>
+		<li><a href="actualizaciones-en.htm">Update log</a></li>
+		</ul>
+
+	  <p><a href="metodologia/ipcmet.pdf">Methodology</a></p>
+
+	  </div>
+	  <?php include 'social.php'; ?> 
+     </div>
+    </td><td>
+     <div id='contenido'>
+      <h2 class='nomProd'>Consumer Price Index</h2>
+
+      <!-- Datos destacados -->
+      <div id='ddestacados'>
+        <ul class='tabs'>
+            <li>Featured data</li>
+        </ul>
+        <div id='tabladatos'><?php include 'ddestacados.htm'; ?></div>
+      </div>
+      <!-- Datos destacados -->
+		
+		<!-- datos -->
+		<p><strong>DATA</strong></p>
+		  
+		<!-- Datos mensuales -->
+		
+		<ul>
+		    <li class='itemProd'> Detailed tabulation. Base 2021 <br><br>
+
+		    <!-- Últimos datos -->
+			<ul>
+				<li class="itemProd"><a href="https://www.juntadeandalucia.es/institutodeestadisticaycartografia/badea/informe/datosaldia?CodOper=b3_531&idNode=75308">Last month: January 2022</a> (Data available from January 2002)</li>
+	            <li class="itemProd">Other months: To view previous months must log in <a href="https://www.juntadeandalucia.es/institutodeestadisticaycartografia/badea/informe/datosaldia?CodOper=b3_531&idNode=75308">last month</a> and click on the "Other period" button on each query.</li>    
+			</ul>
+	        </li>
+				
+			<!-- Series evolutivas  -->
+
+			<li class="itemProd"><a href='../indea-public/?tema=951'>Evolutionary series</a></li> 
+
+		
+	        <!-- Bases anteriores  -->
+			<li class='itemProd'><a href='otrasbases/index-en.htm'>Results with not applicable bases</a></li>
+            </ul>
+		
+		<!-- fin de datos -->
+ 
+		<div class="otraActividad">
+		<p>Publications associated:</p>
+		<ul>
+			<li><a href="../infografias/img/ipc/ipc.htm">Infographics: The Consumer Prices Index in Andalusia</a></li>
+			<li><a href='../estudios/inflacion/inflacion.pdf'>Breakdown analysis of Spanish and Andalusian inflation</a></li>
+			<li><a href='../doctrabajo/inflacion/inflacion.pdf'>An empirical approach to the analysis of the persistence of Spanish inflation</a></li>
+		</ul>
+      </div>
+
+     </div>
+    </td></tr>
+    </table>
+    
+  </div>
+  <!-- fin bloque de contenido -->
+
+   </div> <!-- fin sinid_1 -->
+  </div> <!-- fin id=cuerpo -->
+  <!-- fin Cuerpo -->
+  
+<?php include 'pie.php'; ?>

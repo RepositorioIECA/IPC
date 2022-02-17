@@ -1,0 +1,96 @@
+<?php
+include_once '../portal/class/general.php';
+include 'config.php';
+$tipo = PAG_PRODUCTO;
+include 'cabecera.php';
+?>
+
+
+  <!-- Cuerpo -->
+  <div id='cuerpo'>
+   <div> <!-- sinid_1 -->
+  <!-- bloque de contenido -->
+  <div id='container'>
+    <table class='tbmenu' summary='Columna 1: Descripción del producto, Columna 2: menú'>
+    <tr><td class='tdmenu'>
+     <div id='columizq'>
+      <div id='menu-producto'>
+
+      <p>El <strong>Índice de Precios de Consumo</strong> mide la evolución del nivel de precios de los bienes y servicios de consumo adquiridos por los hogares.</p>
+
+	<ul>          
+      <li>Organismo: Instituto de Estadística y Cartografía de Andalucía.</li>
+	  <li>Ámbito: Nacional, Andalucía y provincial.</li>
+    </ul>
+	 
+      </div>
+	  <div id='actualizacion'>
+	  <p>Actualizaciones:</p>
+	  	<ul class='circle'>
+		<li>Última actualización: 15/02/2022</li>
+		<li><a href="actualizaciones.htm">Registro de actualizaciones</a></li>
+		</ul>
+
+	  <p><a href="metodologia/ipcmet.pdf">Metodología</a></p>
+
+	  </div>
+	  <?php include 'social.php'; ?> 
+     </div>
+    </td><td>
+     <div id='contenido'>
+      <h2 class='nomProd'>Índice de Precios de Consumo</h2>
+
+      <!-- Datos destacados -->
+      <div id='ddestacados'>
+        <ul class='tabs'>
+          <li>Datos destacados</li>
+        </ul>
+        <div id='tabladatos'><?php include 'ddestacados.htm'; ?></div>
+      </div>
+      <!-- Datos destacados -->  
+      
+		<!-- datos -->
+		<p><strong>DATOS</strong></p>
+		  
+		<!-- Datos mensuales -->
+		
+		<ul>
+		    <li class='itemProd'> Tabulación detallada. Base 2021<br><br>
+		    <!-- Últimos datos -->
+			<ul>
+				<li class="itemProd"><a href="https://www.juntadeandalucia.es/institutodeestadisticaycartografia/badea/informe/datosaldia?CodOper=b3_531&idNode=75308">Último mes: enero 2022</a> (Datos disponibles desde enero 2002)</li>
+	            <li class="itemProd">Meses anteriores: Para poder consultar meses anteriores, debe acceder al <a href="https://www.juntadeandalucia.es/institutodeestadisticaycartografia/badea/informe/datosaldia?CodOper=b3_531&idNode=75308">último mes</a> y hacer click en el botón "Otro periodo" de cada consulta.</li>    
+			</ul>
+			</li>
+	      
+			<!-- Series evolutivas  -->
+			<li class="itemProd"><a href='../indea-public/?tema=951'>Series evolutivas</a></li> 
+
+			<!-- Bases anteriores  -->
+			<li class='itemProd'><a href='otrasbases/index.htm'>Resultados con bases no vigentes</a></li>
+        </ul>
+		
+		<!-- fin de datos -->
+
+     <div class="otraActividad">
+	 <p>Publicaciones asociadas:</p>
+		<ul>
+		<li><a href="../infografias/img/ipc/ipc.htm">Infografía: El Indice de Precios de Consumo en Andalucía</a></li>
+		<li><a href='../estudios/inflacion/inflacion.pdf'>Análisis desagregado de la inflación española y andaluza</a></li>
+	    <li><a href='../doctrabajo/inflacion/inflacion.pdf'>Una aproximación empírica al análisis de la persistencia de las tasas de inflación españolas</a></li>
+		</ul>
+      </div>
+
+
+     </div>
+    </td></tr>
+    </table>
+    
+  </div>
+  <!-- fin bloque de contenido -->
+
+   </div> <!-- fin sinid_1 -->
+  </div> <!-- fin id=cuerpo -->
+  <!-- fin Cuerpo -->
+  
+<?php include 'pie.php'; ?>
